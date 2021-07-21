@@ -1,5 +1,5 @@
 /****************************************************************
- * Purpose : Ability to add 22, 40, 11, 3, 16, 60, 95, 65, 63, 67 in the binary search tree
+ * Purpose : Ability to add values in BST and check whether 63 exists in it.
  * @author Samarth BM
 
 ***************************************************************/
@@ -25,8 +25,13 @@ public class BinarySearchTreeRunner {
 		binary.insert(65);
 		binary.insert(63);
 		binary.insert(67);
+
 		// Displaying the Binary tree.
 		binary.inorderTraversal(binary.root);
+
+		// checking if 63 exists in BST.
+		boolean flag = binary.search(63);
+		System.out.println("\nElement exits: " + flag);
 
 	}
 
